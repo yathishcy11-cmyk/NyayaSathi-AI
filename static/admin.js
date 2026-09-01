@@ -1,0 +1,12 @@
+
+let token=sessionStorage.getItem("nyaya_admin")||"";const auth=()=>({Authorization:`Bearer ${token}`});
+async function load(){const [s,c]=await Promise.all([fetch("/api/admin/stats",{headers:auth()}),fetch("/api/admin/chats",{headers:auth()})]);if(!s.ok||!c.ok){loginbox.classList.remove("hide");dash.classList.add("hide");return}
+ const st=await s.json(),ch=await c.json();loginbox.classList.add("hide");dash.classList.remove("hide");total.textContent=st.total_chats;helpful.textContent=st.helpful;unresolved.textContent=st.unresolved;knowledge.textContent=st.knowledge_chunks;
+ topics.innerHTML=st.topics.length?st.topics.map(x=>`<div class="topic"><span>${esc(x.name)}</span><b>${x.count}</b></div>`).join(""):"No chat data yet.";
+ rows.innerHTML=ch.map(x=>`<tr><td>${x.id}</td><td>${esc(x.question)}</td><td>${esc(x.topic)}</td><td>${x.feedback||"—"}</td></tr>`).join("")}
+const esc=s=>(s||"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
+loginbtn.onclick=async()=>{const r=await fetch("/api/admin/login",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({username:u.value,password:p.value})});if(!r.ok)return alert("Invalid credentials");token=(await r.json()).token;sessionStorage.setItem("nyaya_admin",token);load()};
+refresh.onclick=load;exportBtn.onclick=async()=>{const r=await fetch("/api/admin/export.csv",{headers:auth()});if(!r.ok)return alert("Export failed");const blob=await r.blob(),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="nyayasathi_chat_logs.csv";a.click();URL.revokeObjectURL(url)};
+uploadForm.onsubmit=async e=>{e.preventDefault();const fd=new FormData();fd.append("file",doc.files[0]);fd.append("source_name",source.value);fd.append("source_url",url.value);uploadStatus.textContent="Uploading…";const r=await fetch("/api/admin/knowledge/upload",{method:"POST",headers:auth(),body:fd});const d=await r.json();uploadStatus.textContent=r.ok?`Added ${d.chunks_added} knowledge chunks.`:(d.detail||"Upload failed");if(r.ok)load()};
+imgForm.onsubmit=async e=>{e.preventDefault();const fd=new FormData();fd.append("file",img.files[0]);const r=await fetch("/api/admin/image/preprocess",{method:"POST",headers:auth(),body:fd});if(!r.ok)return alert("Preprocessing failed");const blob=await r.blob(),u=URL.createObjectURL(blob),a=document.createElement("a");a.href=u;a.download="preprocessed.png";a.click();URL.revokeObjectURL(u)};
+if(token)load();

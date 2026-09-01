@@ -1,0 +1,38 @@
+[
+  {
+    "id": "legal_aid",
+    "title": "Free Legal Aid",
+    "text_en": "Free legal services may include representation by an advocate, legal advice, preparation of pleadings and certain litigation-related expenses for eligible beneficiaries. Eligibility should be verified with the relevant Legal Services Authority.",
+    "text_hi": "निःशुल्क विधिक सेवाओं में पात्र लाभार्थियों के लिए अधिवक्ता द्वारा प्रतिनिधित्व, कानूनी सलाह, दस्तावेज़ तैयार करना और कुछ मुकदमे-संबंधी खर्च शामिल हो सकते हैं। पात्रता संबंधित विधिक सेवा प्राधिकरण से सत्यापित करें।",
+    "text_kn": "ಉಚಿತ ಕಾನೂನು ಸೇವೆಗಳು ಅರ್ಹ ಫಲಾನುಭವಿಗಳಿಗೆ ವಕೀಲರ ಪ್ರತಿನಿಧಿತ್ವ, ಕಾನೂನು ಸಲಹೆ, ಅರ್ಜಿಗಳ ತಯಾರಿ ಮತ್ತು ಕೆಲವು ನ್ಯಾಯಾಂಗ ವೆಚ್ಚಗಳನ್ನು ಒಳಗೊಂಡಿರಬಹುದು. ಅರ್ಹತೆಯನ್ನು ಸಂಬಂಧಿತ ಕಾನೂನು ಸೇವಾ ಪ್ರಾಧಿಕಾರದಿಂದ ಪರಿಶೀಲಿಸಬೇಕು.",
+    "source": "NALSA",
+    "url": "https://nalsa.gov.in/"
+  },
+  {
+    "id": "case_status",
+    "title": "eCourts Case Status",
+    "text_en": "Use the official eCourts Services portal to check case status. Citizens can use CNR when available and may also search using other case details provided by the portal. NyayaSathi never claims access to private court records.",
+    "text_hi": "केस की स्थिति देखने के लिए आधिकारिक eCourts Services पोर्टल का उपयोग करें। उपलब्ध होने पर CNR का उपयोग किया जा सकता है और पोर्टल पर उपलब्ध अन्य केस विवरणों से भी खोज की जा सकती है। NyayaSathi निजी कोर्ट रिकॉर्ड तक पहुँच का दावा नहीं करता।",
+    "text_kn": "ಕೇಸ್ ಸ್ಥಿತಿಯನ್ನು ಪರಿಶೀಲಿಸಲು ಅಧಿಕೃತ eCourts Services ಪೋರ್ಟಲ್ ಬಳಸಿ. CNR ಲಭ್ಯವಿದ್ದರೆ ಅದನ್ನು ಬಳಸಬಹುದು; ಪೋರ್ಟಲ್ ನೀಡುವ ಇತರ ಪ್ರಕರಣ ವಿವರಗಳಿಂದಲೂ ಹುಡುಕಬಹುದು. NyayaSathi ಖಾಸಗಿ ನ್ಯಾಯಾಲಯ ದಾಖಲೆಗಳಿಗೆ ಪ್ರವೇಶವಿದೆ ಎಂದು ಹೇಳುವುದಿಲ್ಲ.",
+    "source": "eCourts Services",
+    "url": "https://services.ecourts.gov.in/ecourtindia_v6/"
+  },
+  {
+    "id": "telelaw",
+    "title": "Tele-Law",
+    "text_en": "Tele-Law is a government justice-access initiative using technology to connect citizens with legal guidance. Current access instructions should be verified on official Department of Justice channels.",
+    "text_hi": "टेली-लॉ एक सरकारी न्याय-पहुंच पहल है जो नागरिकों को कानूनी मार्गदर्शन से जोड़ने के लिए तकनीक का उपयोग करती है। वर्तमान उपयोग निर्देश आधिकारिक न्याय विभाग के माध्यम से सत्यापित करें।",
+    "text_kn": "ಟೆಲಿ-ಲಾ ತಂತ್ರಜ್ಞಾನ ಬಳಸಿ ನಾಗರಿಕರನ್ನು ಕಾನೂನು ಮಾರ್ಗದರ್ಶನಕ್ಕೆ ಸಂಪರ್ಕಿಸುವ ಸರ್ಕಾರಿ ನ್ಯಾಯ ಪ್ರವೇಶ ಯೋಜನೆಯಾಗಿದೆ. ಪ್ರಸ್ತುತ ಬಳಕೆ ಸೂಚನೆಗಳನ್ನು ನ್ಯಾಯ ಇಲಾಖೆಯ ಅಧಿಕೃತ ಮೂಲಗಳಿಂದ ಪರಿಶೀಲಿಸಿ.",
+    "source": "Department of Justice",
+    "url": "https://doj.gov.in/"
+  },
+  {
+    "id": "documents",
+    "title": "Documents and Procedure",
+    "text_en": "Required documents depend on the specific service or proceeding. Common items may include identity proof, address proof, application forms and case-related papers. Always verify the exact checklist on the relevant official service portal.",
+    "text_hi": "आवश्यक दस्तावेज़ सेवा या प्रक्रिया पर निर्भर करते हैं। सामान्य रूप से पहचान प्रमाण, पता प्रमाण, आवेदन पत्र और केस से संबंधित दस्तावेज़ आवश्यक हो सकते हैं। सटीक सूची संबंधित आधिकारिक सेवा पोर्टल पर सत्यापित करें।",
+    "text_kn": "ಅಗತ್ಯ ದಾಖಲೆಗಳು ಸೇವೆ ಅಥವಾ ಪ್ರಕ್ರಿಯೆಯ ಮೇಲೆ ಅವಲಂಬಿತವಾಗಿರುತ್ತವೆ. ಗುರುತಿನ ದಾಖಲೆ, ವಿಳಾಸದ ದಾಖಲೆ, ಅರ್ಜಿ ನಮೂನೆಗಳು ಮತ್ತು ಪ್ರಕರಣ ಸಂಬಂಧಿತ ದಾಖಲೆಗಳು ಸಾಮಾನ್ಯವಾಗಿ ಬೇಕಾಗಬಹುದು. ನಿಖರ ಪಟ್ಟಿಯನ್ನು ಅಧಿಕೃತ ಸೇವಾ ಪೋರ್ಟಲ್‌ನಲ್ಲಿ ಪರಿಶೀಲಿಸಿ.",
+    "source": "Department of Justice / Relevant official service",
+    "url": "https://doj.gov.in/"
+  }
+]
